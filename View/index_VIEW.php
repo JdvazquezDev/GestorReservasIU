@@ -15,14 +15,11 @@ class Index
 
   function render()
   {
-    include 'Locale/Strings_SPANISH.php';
     include 'View/layout.php';
     include 'View/header.php';
 ?>
 
-<div>
-  <h1>Página de bienvenida</h1>
-</div>
+
 
 
 
