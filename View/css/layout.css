@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html,
 body {
   height: 100%;
@@ -7,6 +9,23 @@ body {
   flex: 1 0 auto;
 }
 
+.logout-icon{
+  width: 25px;
+  height: 25px;
+}
+
+
 #sticky-footer {
-  flex-shrink: none;
+   flex-shrink: none;
+}
+
+.a-link {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.a-link:hover {
+  color: #ffffff;
+  text-decoration:none; 
+  cursor:pointer;  
 }

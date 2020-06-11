@@ -2,7 +2,10 @@
 
 <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
   <div class="container text-center">
-    <h6 class="text-light">Creado por: <strong class="text-success">Jdvazquez</strong></h6>
+    <h6 class="text-light">
+      <?php echo $strings['Creado por:'] ?><strong class="text-success"> Jdvazquez</strong>.
+      10/06/2020
+    </h6>
     <small>Copyright &copy; ReservasIU</small>
   </div>
 </footer>
