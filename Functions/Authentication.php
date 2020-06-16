@@ -8,7 +8,7 @@ Si no existe redirige a la pagina de login
 Si existe comprueba si el usuario tiene permisos para ejecutar la accion de ese controlador
 */
 function IsAuthenticated(){
-	if (!isset($_SESSION['login'])){
+	if (!isset($_SESSION['LOGIN'])){
 		//header('Location:USUARIOS_Controller.php?accion=Login');	
 		return false;
 	}
@@ -20,5 +20,3 @@ function IsAuthenticated(){
 		return true;
 	}
 } //end of function IsAuthenticated()
-?>
-

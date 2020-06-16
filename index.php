@@ -13,11 +13,20 @@ session_start();
 //funcion de autenticacion
 include './Functions/Authentication.php';
 
-//si no ha pasado por el login de forma correcta
-if (!IsAuthenticated()) {
-  header('Location:./Controller/Login_Controller.php');
+if (!isset($_SESSION['FirstConnection'])) {
+  $_SESSION['FirstConnection'] = true;
 }
-//si ha pasado por el login de forma correcta 
-else {
-  header('Location:./Controller/Index_Controller.php');
+
+if (!($_SESSION['FirstConnection'])) {
+  //si no ha pasado por el login de forma correcta
+  if (!IsAuthenticated()) {
+    header('Location: ./Controller/Login_Controller.php');
+  }
+  //si ha pasado por el login de forma correcta 
+  else {
+    header('Location: ./Controller/Index_Controller.php');
+  }
+} else {
+  $_SESSION['FirstConnection'] = false;
+  // header('Location: ./Controller/Install_Controller.php');
 }

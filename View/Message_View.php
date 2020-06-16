@@ -21,23 +21,20 @@ class Message
 
 	function render()
 	{
-		include '../View/layout.php';
+		include_once '../View/layout.php';
 		include '../Locale/Strings_' . $_SESSION['idioma'] . '.php';
 		include '../View/header.php';
 ?>
-<br>
-<br>
-<br>
-<p>
-  <h3>
-    <?php
-				echo $this->string;
-				?>
-  </h3>
-</p>
-<br>
-<br>
-<br>
+<div class="message-container card d-flex justify-content-center">
+  <p>
+    <h3>
+      <?php
+					echo $this->string;
+					?>
+    </h3>
+  </p>
+</div>
+
 
 <?php
 

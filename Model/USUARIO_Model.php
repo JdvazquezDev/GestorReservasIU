@@ -105,7 +105,7 @@ class USUARIO_Model
 	//existe ya en la tabla
 	function ADD()
 	{
-		$sql = "select * from USUARIO where login = '" . $this->login . "'";
+		$sql = "SELECT * FROM USUARIO WHERE LOGIN = '" . $this->login . "'";
 
 		if (!$result = $this->mysqli->query($sql)) {
 			return 'Error de gestor de base de datos';
@@ -116,13 +116,13 @@ class USUARIO_Model
 		}
 
 		$sql = "INSERT INTO USUARIO (
-			login,
-			password,
-			dni,
-			nombre,
-			apellidos,
-			email,
-			rol) 
+			LOGIN,
+			PASSWORD,
+			DNI,
+			NOMBRE,
+			APELLIDOS,
+			EMAIL,
+			ROL) 
 				VALUES (
 					'" . $this->login . "',
 					'" . $this->password . "',
@@ -155,13 +155,13 @@ class USUARIO_Model
 		$sql = "SELECT *
 			FROM USUARIO
 			WHERE (
-				login LIKE '%" . $this->login . "%' AND
-				password LIKE '%" . $this->password . "%' AND
-				dni LIKE '%" . $this->dni . "%' AND
-				nombre LIKE '%" . $this->nombre . "%' AND
-				apellidos LIKE '%" . $this->apellidos . "%' AND
-				email LIKE '%" . $this->email . "%' AND
-				rol LIKE '%" . $this->rol . "%' 
+				LOGIN LIKE '%" . $this->login . "%' AND
+				PASSWORD LIKE '%" . $this->password . "%' AND
+				DNI LIKE '%" . $this->dni . "%' AND
+				NOMBRE LIKE '%" . $this->nombre . "%' AND
+				APELLIDOS LIKE '%" . $this->apellidos . "%' AND
+				EMAIL LIKE '%" . $this->email . "%' AND
+				ROL LIKE '%" . $this->rol . "%' 
 			)
 	";
 		if (!$resultado = $this->mysqli->query($sql)) {
@@ -177,7 +177,7 @@ class USUARIO_Model
 		$sql = "	DELETE FROM 
    				USUARIO
    			WHERE(
-   				login = '$this->login'
+   				LOGIN = '$this->login'
    			)
    			";
 
@@ -195,7 +195,7 @@ class USUARIO_Model
 		$sql = "SELECT * 
 			FROM USUARIO
 			WHERE (
-				(login = '$this->login') 
+				(LOGIN = '$this->login') 
 			)";
 
 		if (!$resultado = $this->mysqli->query($sql)) {
@@ -211,14 +211,14 @@ class USUARIO_Model
 	{
 		$sql = "UPDATE USUARIO
 			SET 
-				password = '$this->password',
-				dni = '$this->dni',
-				nombre = '$this->nombre',
-				apellidos = '$this->apellidos',
-				email = '$this->email',
-				rol = '$this->rol'
+				PASSWORD = '$this->password',
+				DNI = '$this->dni',
+				NOMBRE = '$this->nombre',
+				APELLIDOS = '$this->apellidos',
+				EMAIL = '$this->email',
+				ROL = '$this->rol'
 			WHERE (
-				login = '$this->login'
+				LOGIN = '$this->login'
 			)
 			";
 		if ($this->mysqli->query($sql)) {
@@ -237,7 +237,7 @@ class USUARIO_Model
 		$sql = "SELECT *
 			FROM USUARIO
 			WHERE (
-				(login = '$this->login') 
+				(LOGIN = '$this->login') 
 			)";
 
 		$resultado = $this->mysqli->query($sql);
@@ -245,7 +245,7 @@ class USUARIO_Model
 			return 'El login no existe';
 		} else {
 			$tupla = $resultado->fetch_array();
-			if ($tupla['password'] == $this->password) {
+			if ($tupla['PASSWORD'] == $this->password) {
 				return true;
 			} else {
 				return 'La password para este usuario no es correcta';
@@ -256,7 +256,7 @@ class USUARIO_Model
 	//
 	function Register()
 	{
-		$sql = "select * from USUARIO where login = '" . $this->login . "'";
+		$sql = "SELECT * FROM USUARIO WHERE LOGIN = '" . $this->login . "'";
 
 		$result = $this->mysqli->query($sql);
 		if ($result->num_rows == 1) {  // existe el usuario

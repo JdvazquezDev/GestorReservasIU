@@ -7,10 +7,10 @@
 
 
 session_start();
-include_once '../Locale/Strings_' . $_SESSION['idioma'] . '.php';
 
 
 if (!isset($_POST['LOGIN'])) {
+
   include '../View/Register_View.php';
   $register = new Register();
 } else {

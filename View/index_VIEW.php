@@ -15,17 +15,17 @@ class Index
 
   function render()
   {
-    include 'View/layout.php';
-    include 'View/header.php';
+    include_once '../View/layout.php';
+    include '../View/header.php';
 ?>
 
 
 
-
+<h5>Index</h5>
 
 
 <?php
-    include 'View/footer.php';
+    include '../View/footer.php';
   }
 }
 ?>
