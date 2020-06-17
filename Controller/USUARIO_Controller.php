@@ -11,7 +11,7 @@ session_start(); //solicito trabajar con la session
 include '../Functions/Authentication.php';
 
 if (!IsAuthenticated()) {
-	header('Location: ../Index_Controller.php');
+	header('Location: ../Controller/Index_Controller.php');
 }
 
 include '../Model/USUARIO_Model.php';
@@ -71,7 +71,7 @@ switch ($_REQUEST['action']) {
 		break;
 	case 'DELETE':
 		if (!$_POST) { //nos llega el id a eliminar por get
-			$USUARIO = new USUARIO_Model($_REQUEST['login'], '', '', '', '', '', '');
+			$USUARIO = new USUARIO_Model($_REQUEST['LOGIN'], '', '', '', '', '', '');
 			$valores = $USUARIO->RellenaDatos();
 			new USUARIO_DELETE($valores); //se le muestra al usuario los valores de la tupla para que confirme el borrado mediante un form que no permite modificar las variables 
 		} else { // llegan los datos confirmados por post y se eliminan
@@ -82,7 +82,7 @@ switch ($_REQUEST['action']) {
 		break;
 	case 'EDIT':
 		if (!$_POST) { //nos llega el usuario a editar por get
-			$USUARIO = new USUARIO_Model($_REQUEST['login'], '', '', '', '', '', ''); // Creo el objeto
+			$USUARIO = new USUARIO_Model($_REQUEST['LOGIN'], '', '', '', '', '', ''); // Creo el objeto
 			$valores = $USUARIO->RellenaDatos(); // obtengo todos los datos de la tupla
 			if (is_array($valores)) {
 				new USUARIO_EDIT($valores); //invoco la vista de edit con los datos 
@@ -105,13 +105,13 @@ switch ($_REQUEST['action']) {
 			$USUARIO = get_data_form();
 			$datos = $USUARIO->SEARCH();
 
-			$lista = array('login', 'password', 'DNI', 'email', 'nombre', 'apellidos', 'telefono', '', 'FechaNacimiento', 'sexo');
+			$lista = array('LOGIN', 'PASSWORD', 'DNI', 'EMAIL', 'NOMBRE', 'APELLIDOS', 'ROL');
 
 			new USUARIO_SHOWALL($lista, $datos, '../index.php');
 		}
 		break;
 	case 'SHOWCURRENT':
-		$USUARIO = new USUARIO_Model($_REQUEST['login'], '', '', '', '', '', '');
+		$USUARIO = new USUARIO_Model($_REQUEST['LOGIN'], '', '', '', '', '', '');
 		$valores = $USUARIO->RellenaDatos();
 		new USUARIO_SHOWCURRENT($valores);
 		break;
@@ -122,6 +122,6 @@ switch ($_REQUEST['action']) {
 			$USUARIO = get_data_form();
 		}
 		$datos = $USUARIO->SEARCH();
-		$lista = array('login', 'nombre', 'email', 'telefono');
+		$lista = array('LOGIN', 'NOMBRE', 'APELLIDOS', 'EMAIL', 'ROL');
 		new USUARIO_SHOWALL($lista, $datos);
 }
