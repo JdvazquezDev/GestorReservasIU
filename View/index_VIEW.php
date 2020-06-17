@@ -18,10 +18,16 @@ class Index
     include_once '../View/layout.php';
     include '../View/header.php';
 ?>
+<div class="index-container h-75 d-flex justify-content-center">
+  <div class="mr-5 ml-5 text-center d-flex flex-column">
+    <h2 class="m-4">ReservasIU</h2>
+    <div class="index-image-container d-flex justify-content-center">
+      <img src="../View/img/index.jpg" class="img-thumbnail" alt="Index img">
+    </div>
+    <p class="mt-3 ml-5 mr-5" id="Texto index"></p>
+  </div>
 
-
-
-<h5>Index</h5>
+</div>
 
 
 <?php

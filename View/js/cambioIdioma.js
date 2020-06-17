@@ -55,6 +55,7 @@ function cambio_idioma(idioma) {
       'aquí': 'aquí',
       'Si no tienes cuenta, crea una ': 'Si no tienes cuenta, crea una ',
       'Si ya tienes una cuenta, inicia sesión': 'Si ya tienes una cuenta, inicia sesión',
+      'Texto index': 'Bienvenidos a ReservasIU. La web ofrece un servicio de reservas de espacios en un horario específico. Los usuarios puede realizar peticiones de reservas añadiendo el uso que se le va a dar al espacio. Estas peticiones serán revisadas por un administrador que dará una respuesta lo antes posible. Los usuarios podrán revisar el calendario de ocupación de cada espacio.',
 
       //----------------- ACCIONES -----------------
       'Add': 'Crear',
@@ -105,6 +106,7 @@ function cambio_idioma(idioma) {
       'aquí': 'aquí',
       'Si no tienes cuenta, crea una ': 'Se non tes conta, crea unha ',
       'Si ya tienes una cuenta, inicia sesión': 'Se xa tes unha conta, inicia sesión',
+      'Texto index': 'Benvidos a ReservasIU. A web ofrece un servizo de reservas de espazos nun horario específico. Os usuarios poden realizar peticións de reservas engadindo o uso que se lle vai dar ao espazo. Estas peticións serán revisadas por un administrador, que dará unha resposta o antes posible. Os usuarios poderán revisar o calendario de ocupación de cada espazo.',
 
       //----------------- ACCIONES -----------------
       'Add': 'Engadir',
@@ -157,6 +159,7 @@ function cambio_idioma(idioma) {
       'aquí': 'here',
       'Si no tienes cuenta, crea una ': 'If you dont have an account, create one ',
       'Si ya tienes una cuenta, inicia sesión': 'If you already have an account, log in',
+      'Texto index': 'Welcome to ReservasIU. The website offers a space booking service at a specific time. Users can make booking requests by adding the use that will be given to the space. These requests will be reviewed by an administrator who will give an answer as soon as possible. Users can check the occupation schedule of each space.',
 
       //----------------- ACCIONES -----------------
       'Add': 'Add',

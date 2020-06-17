@@ -13,7 +13,8 @@ include_once '../View/layout.php';
 
 <header>
   <div class="header-top bg-dark d-flex justify-content-between border-bottom border-light">
-    <a class="h3 a-link text-white ml-4 mt-2 " href="#"><strong>ReservasIU</strong></a>
+    <a class="h3 a-link text-white ml-4 mt-2 "
+      href="../Controller/Index_Controller.php"><strong>ReservasIU</strong></a>
     <div class="language-selector mr-2">
 
       <div class="languages-header-container d-flex ">
@@ -58,7 +59,8 @@ include_once '../View/layout.php';
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active mr-3">
-          <a id="Inicio" class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+          <a id="Inicio" class="nav-link" href="../Controller/Index_Controller.php"><span
+              class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item mr-3">
           <a id="Usuarios" class="nav-link" href="../Controller/USUARIO_Controller.php"></a>
