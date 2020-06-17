@@ -22,7 +22,6 @@ class Message
 	function render()
 	{
 		include_once '../View/layout.php';
-		include '../Locale/Strings_' . $_SESSION['idioma'] . '.php';
 		include '../View/header.php';
 ?>
 <div class="message-container card d-flex justify-content-center">
@@ -38,7 +37,7 @@ class Message
 
 <?php
 
-		echo '<a href=\'' . $this->volver . "'>" . $strings['Volver'] . " </a>";
+		echo '<a id="Volver"href=\'' . $this->volver . "'> </a>";
 		include '../View/footer.php';
 	} //fin metodo render
 
