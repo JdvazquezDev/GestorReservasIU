@@ -15,16 +15,7 @@ include_once '../View/layout.php';
   <div class="header-top bg-dark d-flex justify-content-between border-bottom border-light">
     <a class="h3 a-link text-white ml-4 mt-2 " href="#"><strong>ReservasIU</strong></a>
     <div class="language-selector mr-2">
-      <!--  <form name='idiomaform' action="../Functions/CambioIdioma.php" method="post">
-        <select id="idioma" name="idioma" onChange='this.form.submit()' class="custom-select custom-select-sm mt-2  bg-light " data-width="fit">
-          <option selected value="<?php echo $_SESSION['idioma'] ?>">
-            <?php echo $strings[$_SESSION['idioma']] ?></option>
-          <option value="SPANISH"><?php echo $strings['SPANISH'] ?></option>
-          <option value="ENGLISH"><?php echo $strings['ENGLISH'] ?></option>
-          <option value="GALLAECIAN"><?php echo $strings['GALLAECIAN'] ?></option>
-        </select>
-      </form>
--->
+
       <div class="languages-header-container d-flex ">
         <button class="mt-2 ml-2 rounded languages-btn-spanish" id="idioma" name="idioma"
           onclick="cambio_idioma('ES')" value="SPANISH"></button>
