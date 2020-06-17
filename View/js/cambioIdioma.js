@@ -57,17 +57,21 @@ function cambio_idioma(idioma) {
       'Si ya tienes una cuenta, inicia sesión': 'Si ya tienes una cuenta, inicia sesión',
 
       //----------------- ACCIONES -----------------
-      'AÑADIR': 'AÑADIR',
-      'SHOWALL': 'MOSTRAR TODOS',
-      'EDITAR': 'EDITAR',
-      'BORRAR': 'BORRAR',
-      'BUSCAR': 'BUSCAR',
-      'SHOWCURRENT': 'DETALLE',
+      'Add': 'Crear',
+      'Showall': 'Mostrar todos',
+      'Edit': 'Editar',
+      'Delete': 'Eliminar',
+      'Search': 'Buscar',
+      'Showcurrent': 'Mostrar usuario',
       'Volver': 'Volver',
       'Iniciar sesión': 'Iniciar sesión',
       'Crear cuenta': 'Crear cuenta',
       'Entrar': 'Entrar',
-      'Crear': 'Crear'
+      'Crear': 'Crear',
+      'Crear usuario': 'Crear usuario',
+      'Eliminar usuario': 'Eliminar usuario',
+      'Editar usuario': 'Editar usuario',
+      'Buscar usuario': 'Buscar usuario'
 
     },
 
@@ -103,17 +107,21 @@ function cambio_idioma(idioma) {
       'Si ya tienes una cuenta, inicia sesión': 'Se xa tes unha conta, inicia sesión',
 
       //----------------- ACCIONES -----------------
-      'AÑADIR': 'Engadir',
-      'SHOWALL': 'MOSTRAR TODOS',
-      'EDITAR': 'EDITAR',
-      'BORRAR': 'BORRAR',
-      'BUSCAR': 'BUSCAR',
-      'SHOWCURRENT': 'DETALLE',
+      'Add': 'Engadir',
+      'Showall': 'Mostrar todos',
+      'Edit': 'Editar',
+      'Delete': 'Eliminar',
+      'Search': 'Buscar',
+      'Showcurrent': 'Mostrar usuario',
       'Volver': 'Volver',
       'Iniciar sesión': 'Iniciar sesión',
       'Crear cuenta': 'Crear conta',
       'Entrar': 'Entrar',
-      'Crear': 'Crear'
+      'Crear': 'Crear',
+      'Crear usuario': 'Crear usuario',
+      'Eliminar usuario': 'Eliminar usuario',
+      'Editar usuario': 'Editar usuario',
+      'Buscar usuario': 'Buscar usuario'
 
 
     },
@@ -151,17 +159,21 @@ function cambio_idioma(idioma) {
       'Si ya tienes una cuenta, inicia sesión': 'If you already have an account, log in',
 
       //----------------- ACCIONES -----------------
-      'AÑADIR': 'ADD',
-      'SHOWALL': 'SHOWALL',
-      'EDITAR': 'EDIT',
-      'BORRAR': 'DELETE',
-      'BUSCAR': 'SEARCH',
-      'SHOWCURRENT': 'SHWOCURRENT',
+      'Add': 'Add',
+      'Showall': 'Showall',
+      'Edit': 'EDIT',
+      'Delete': 'Delete',
+      'Search': 'Search',
+      'Showcurrent': 'Showcurrent',
       'Volver': 'Go Back',
       'Iniciar sesión': 'Log in',
       'Crear cuenta': 'Create an account',
       'Entrar': 'Login',
-      'Crear': 'Create account'
+      'Crear': 'Create account',
+      'Crear usuario': 'Create user',
+      'Eliminar usuario': 'Delete user',
+      'Editar usuario': 'Edit user',
+      'Buscar usuario': 'Search user'
 
     }
   };
