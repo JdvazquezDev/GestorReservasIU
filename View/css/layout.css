@@ -96,3 +96,8 @@ body {
   max-height: 5vh;
   margin:2px;
 }
+
+.sup{
+  vertical-align: super;
+  font-size: smaller;
+}

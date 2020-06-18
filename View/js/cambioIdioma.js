@@ -39,6 +39,8 @@ function cambio_idioma(idioma) {
 
       //----------------- ESPACIO -----------------
       'Espacios': 'Espacios',
+      'Código': 'Código',
+      'Superficie': ' Superficie',
 
       //----------------- RESERVA -----------------
       'Reservas': 'Reservas',
@@ -56,6 +58,7 @@ function cambio_idioma(idioma) {
       'Si no tienes cuenta, crea una ': 'Si no tienes cuenta, crea una ',
       'Si ya tienes una cuenta, inicia sesión': 'Si ya tienes una cuenta, inicia sesión',
       'Texto index': 'Bienvenidos a ReservasIU. La web ofrece un servicio de reservas de espacios en un horario específico. Los usuarios puede realizar peticiones de reservas añadiendo el uso que se le va a dar al espacio. Estas peticiones serán revisadas por un administrador que dará una respuesta lo antes posible. Los usuarios podrán revisar el calendario de ocupación de cada espacio.',
+      'Acciones': 'Acciones',
 
       //----------------- ACCIONES -----------------
       'Add': 'Crear',
@@ -63,7 +66,7 @@ function cambio_idioma(idioma) {
       'Edit': 'Editar',
       'Delete': 'Eliminar',
       'Search': 'Buscar',
-      'Showcurrent': 'Mostrar usuario',
+      'Showcurrent': 'Ver en detalle',
       'Volver': 'Volver',
       'Iniciar sesión': 'Iniciar sesión',
       'Crear cuenta': 'Crear cuenta',
@@ -72,7 +75,13 @@ function cambio_idioma(idioma) {
       'Crear usuario': 'Crear usuario',
       'Eliminar usuario': 'Eliminar usuario',
       'Editar usuario': 'Editar usuario',
-      'Buscar usuario': 'Buscar usuario'
+      'Buscar usuario': 'Buscar usuario',
+      'Crear espacio': 'Crear espacio',
+      'Eliminar espacio': 'Eliminar espacio',
+      'Editar espacio': 'Editar espacio',
+      'Buscar espacio': 'Buscar espacio',
+
+
 
     },
 
@@ -90,6 +99,8 @@ function cambio_idioma(idioma) {
 
       //----------------- ESPACIO -----------------
       'Espacios': 'Espazos',
+      'Código': 'Código',
+      'Superficie': ' Superficie',
 
       //----------------- RESERVA -----------------
       'Reservas': 'Reservas',
@@ -107,6 +118,8 @@ function cambio_idioma(idioma) {
       'Si no tienes cuenta, crea una ': 'Se non tes conta, crea unha ',
       'Si ya tienes una cuenta, inicia sesión': 'Se xa tes unha conta, inicia sesión',
       'Texto index': 'Benvidos a ReservasIU. A web ofrece un servizo de reservas de espazos nun horario específico. Os usuarios poden realizar peticións de reservas engadindo o uso que se lle vai dar ao espazo. Estas peticións serán revisadas por un administrador, que dará unha resposta o antes posible. Os usuarios poderán revisar o calendario de ocupación de cada espazo.',
+      'Acciones': 'Accións',
+
 
       //----------------- ACCIONES -----------------
       'Add': 'Engadir',
@@ -114,7 +127,7 @@ function cambio_idioma(idioma) {
       'Edit': 'Editar',
       'Delete': 'Eliminar',
       'Search': 'Buscar',
-      'Showcurrent': 'Mostrar usuario',
+      'Showcurrent': 'Ver en detalle',
       'Volver': 'Volver',
       'Iniciar sesión': 'Iniciar sesión',
       'Crear cuenta': 'Crear conta',
@@ -123,7 +136,11 @@ function cambio_idioma(idioma) {
       'Crear usuario': 'Crear usuario',
       'Eliminar usuario': 'Eliminar usuario',
       'Editar usuario': 'Editar usuario',
-      'Buscar usuario': 'Buscar usuario'
+      'Buscar usuario': 'Buscar usuario',
+      'Crear espacio': 'Crear espazo',
+      'Eliminar espacio': 'Eliminar espazo',
+      'Editar espacio': 'Editar espazo',
+      'Buscar espacio': 'Buscar espazo',
 
 
     },
@@ -142,6 +159,8 @@ function cambio_idioma(idioma) {
 
       //----------------- ESPACIO -----------------
       'Espacios': 'Spaces',
+      'Código': 'Code',
+      'Superficie': 'Surface',
 
       //----------------- RESERVA -----------------
       'Reservas': 'Bookings',
@@ -160,6 +179,7 @@ function cambio_idioma(idioma) {
       'Si no tienes cuenta, crea una ': 'If you dont have an account, create one ',
       'Si ya tienes una cuenta, inicia sesión': 'If you already have an account, log in',
       'Texto index': 'Welcome to ReservasIU. The website offers a space booking service at a specific time. Users can make booking requests by adding the use that will be given to the space. These requests will be reviewed by an administrator who will give an answer as soon as possible. Users can check the occupation schedule of each space.',
+      'Acciones': 'Actions',
 
       //----------------- ACCIONES -----------------
       'Add': 'Add',
@@ -167,7 +187,7 @@ function cambio_idioma(idioma) {
       'Edit': 'EDIT',
       'Delete': 'Delete',
       'Search': 'Search',
-      'Showcurrent': 'Showcurrent',
+      'Showcurrent': 'View in detail',
       'Volver': 'Go Back',
       'Iniciar sesión': 'Log in',
       'Crear cuenta': 'Create an account',
@@ -176,7 +196,11 @@ function cambio_idioma(idioma) {
       'Crear usuario': 'Create user',
       'Eliminar usuario': 'Delete user',
       'Editar usuario': 'Edit user',
-      'Buscar usuario': 'Search user'
+      'Buscar usuario': 'Search user',
+      'Crear espacio': 'Create space',
+      'Eliminar espacio': 'Delete space',
+      'Editar espacio': 'Edit space',
+      'Buscar espacio': 'Search space',
 
     }
   };

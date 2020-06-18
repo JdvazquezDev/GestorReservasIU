@@ -1,12 +1,12 @@
 <?php
 
-//Clase : USUARIO_SHOWALL
-//Creado el : 06/10/2019
+//Clase : ESPACIO_SHOWALL
+//Creado el : 18/06/2020
 //Creado por: jdvazquez
 //-------------------------------------------------------
 
 
-class USUARIO_SHOWALL
+class ESPACIO_SHOWALL
 {
 
 
@@ -25,9 +25,9 @@ class USUARIO_SHOWALL
 <h3 class="text-center font-italic" id="Showall"></h3>
 <div
   class="btn-showall-top d-flex justify-content-center align-items-center border-top border-secondary mt-1">
-  <a href='../Controller/USUARIO_Controller.php?action=ADD'><img src="../View/icons/add.svg"></a>
+  <a href='../Controller/ESPACIO_Controller.php?action=ADD'><img src="../View/icons/add.svg"></a>
 
-  <a href='../Controller/USUARIO_Controller.php?action=SEARCH'><img
+  <a href='../Controller/ESPACIO_Controller.php?action=SEARCH'><img
       src="../View/icons/search.svg"></a>
 </div>
 <div class="table-responsive">
@@ -60,17 +60,17 @@ class USUARIO_SHOWALL
         <td class="pl-0 pr-0">
 
           <a class="btn-showall-actions"
-            href='../Controller/USUARIO_Controller.php?action=EDIT&LOGIN=<?php echo $fila['LOGIN']; ?>'><img
+            href='../Controller/ESPACIO_Controller.php?action=EDIT&CODESPACIO=<?php echo $fila['CODESPACIO']; ?>'><img
               src="../View/icons/edit.svg"> </a>
         </td>
         <td class="pl-0 pr-0">
           <a class="btn-showall-actions"
-            href='../Controller/USUARIO_Controller.php?action=DELETE&LOGIN=<?php echo $fila['LOGIN']; ?>'><img
+            href='../Controller/ESPACIO_Controller.php?action=DELETE&CODESPACIO=<?php echo $fila['CODESPACIO']; ?>'><img
               src="../View/icons/delete.svg"></a>
         </td>
         <td class="pl-0 pr-0">
           <a class="btn-showall-actions"
-            href='../Controller/USUARIO_Controller.php?action=SHOWCURRENT&LOGIN=<?php echo $fila['LOGIN']; ?>''> <img src="../View/icons/avatar.svg"></a>
+            href='../Controller/ESPACIO_Controller.php?action=SHOWCURRENT&CODESPACIO=<?php echo $fila['CODESPACIO']; ?>''> <img src="../View/icons/avatar.svg"></a>
 							
         </td>
       </tr>
@@ -86,6 +86,6 @@ class USUARIO_SHOWALL
     include '../View/footer.php';
   } //fin metodo render
 
-} //fin REGISTER
+}
 
 ?>

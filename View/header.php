@@ -66,7 +66,7 @@ include_once '../View/layout.php';
           <a id="Usuarios" class="nav-link" href="../Controller/USUARIO_Controller.php"></a>
         </li>
         <li class="nav-item mr-3">
-          <a id="Espacios" class="nav-link" href="#"></a>
+          <a id="Espacios" class="nav-link" href="../Controller/ESPACIO_Controller.php"></a>
         </li>
         <li class="nav-item mr-3">
           <a id="Reservas" class="nav-link" href="#"></a>
