@@ -1,7 +1,7 @@
 <?php
 
-//Clase : USUARIO_Controller
-//Creado el : 06/10/2019
+//Controlador : USUARIO_Controller
+//Creado el : 18/06/2020
 //Creado por: jdvazquez
 //-------------------------------------------------------
 
@@ -107,7 +107,7 @@ switch ($_REQUEST['action']) {
 
 			$lista = array('LOGIN', 'PASSWORD', 'DNI', 'EMAIL', 'NOMBRE', 'APELLIDOS', 'ROL');
 
-			new USUARIO_SHOWALL($lista, $datos, '../index.php');
+			new USUARIO_SHOWALL($lista, $datos, '../Index_Controller.php');
 		}
 		break;
 	case 'SHOWCURRENT':

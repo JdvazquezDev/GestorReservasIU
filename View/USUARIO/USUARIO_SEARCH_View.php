@@ -33,7 +33,7 @@ class USUARIO_SEARCH
         </div>
         <div class="form-group mb-1">
           <label class="control-label" id="Contraseña"></label> : <input type='password'
-            name='PASSWORD' id='PASSWORD' class="form-control" value=''>
+            name='PASSWORD' id='PASSWORD' class="form-control" value='' readonly>
         </div>
         <div class="form-group mb-1">
           <label class="control-label">DNI</label> : <input type='text' name='DNI' id='DNI'
