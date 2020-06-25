@@ -1,6 +1,6 @@
 <?php
 
-//Clase : Message
+//Script : header
 //Creado el : 11/06/2020
 //Creado por: jdvazquez
 //-------------------------------------------------------
@@ -62,18 +62,29 @@ include_once '../View/layout.php';
           <a id="Inicio" class="nav-link" href="../Controller/Index_Controller.php"><span
               class="sr-only">(current)</span></a>
         </li>
+        <?php
+          if ($_SESSION['ROL'] === 'admin') {
+          ?>
         <li class="nav-item mr-3">
           <a id="Usuarios" class="nav-link" href="../Controller/USUARIO_Controller.php"></a>
         </li>
+
         <li class="nav-item mr-3">
           <a id="Espacios" class="nav-link" href="../Controller/ESPACIO_Controller.php"></a>
         </li>
         <li class="nav-item mr-3">
-          <a id="Reservas" class="nav-link" href="#"></a>
+          <a id="Gestionar reservas" class="nav-link"
+            href="../Controller/RESERVA_Controller.php"></a>
         </li>
+        <?php
+          } else {
+          ?>
         <li class="nav-item mr-3">
-          <a id="Reservas" class="nav-link" href="#"></a>
+          <a id="Reservas" class="nav-link" href="../Controller/RESERVA_Controller.php"></a>
         </li>
+        <?php
+          }
+          ?>
       </ul>
     </div>
   </nav>
