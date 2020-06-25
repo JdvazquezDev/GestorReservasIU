@@ -18,7 +18,13 @@ class Index
     include_once '../View/layout.php';
     include '../View/header.php';
 ?>
+<div>
+  <a href='javascript:history.back(1)' class="btn-back"><img src="../View/icons/back.svg"
+      alt="back">
+  </a>
+</div>
 <div class="index-container h-75 d-flex justify-content-center">
+
   <div class="mr-5 ml-5 text-center d-flex flex-column">
     <h2 class="m-4">ReservasIU</h2>
     <div class="index-image-container d-flex justify-content-center">

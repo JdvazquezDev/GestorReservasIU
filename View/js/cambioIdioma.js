@@ -36,14 +36,39 @@ function cambio_idioma(idioma) {
       'Rol': 'Rol',
       'Usuario': 'Usuario',
       'Usuarios': 'Usuarios',
+      'LOGIN': 'Login',
+      'PASSWORD': 'Contraseña',
+      'NOMBRE': 'Nombre',
+      'APELLIDOS': 'Apellidos',
+      'EMAIL': 'Correo electrónico',
+      'ROL': 'Rol',
 
       //----------------- ESPACIO -----------------
       'Espacios': 'Espacios',
+      'Espacio': 'Espacio',
       'Código': 'Código',
       'Superficie': ' Superficie',
+      'Código espacio': 'Código espacio',
+      'CODESPACIO': 'Código espacio',
+      'NOMBREESPACIO': 'Nombre',
+      'SUPERFICIEESPACIO': 'Superficie m2',
 
       //----------------- RESERVA -----------------
       'Reservas': 'Reservas',
+      'Fecha reserva': 'Fecha reserva',
+      'Hora inicio': 'Hora inicio',
+      'Hora fin': 'Hora fin',
+      'Uso reserva': 'Uso reserva',
+      'Creador': 'Creador',
+      'CODRESERVA': 'Código reserva',
+      'LOGINCREADOR': 'Login creador',
+      'FECHARESERVA': 'Fecha',
+      'HORARIOINICIORESERVA': 'Hora inicio',
+      'HORARIOFINRESERVA': 'Hora fin',
+      'USORESERVA': 'Uso',
+      'VERIFICADA': 'Verificada',
+
+
 
       //----------------- IDIOMAS -----------------
       'ENGLISH': 'Inglés',
@@ -59,6 +84,8 @@ function cambio_idioma(idioma) {
       'Si ya tienes una cuenta, inicia sesión': 'Si ya tienes una cuenta, inicia sesión',
       'Texto index': 'Bienvenidos a ReservasIU. La web ofrece un servicio de reservas de espacios en un horario específico. Los usuarios puede realizar peticiones de reservas añadiendo el uso que se le va a dar al espacio. Estas peticiones serán revisadas por un administrador que dará una respuesta lo antes posible. Los usuarios podrán revisar el calendario de ocupación de cada espacio.',
       'Acciones': 'Acciones',
+      'True': 'Verdadero',
+      'False': 'Falso',
 
       //----------------- ACCIONES -----------------
       'Add': 'Crear',
@@ -80,8 +107,20 @@ function cambio_idioma(idioma) {
       'Eliminar espacio': 'Eliminar espacio',
       'Editar espacio': 'Editar espacio',
       'Buscar espacio': 'Buscar espacio',
+      'Crear reserva': 'Crear reserva',
+      'Eliminar reserva': 'Eliminar reserva',
+      'Editar reserva': 'Editar reserva',
+      'Buscar reserva': 'Buscar reserva',
+      'Gestionar reservas': 'Gestionar reservas',
 
-
+      //----------------- BBDD -----------------
+      'Actualización realizada con éxito': 'Actualización realizada con éxito',
+      'Borrado realizado con éxito': 'Borrado realizado con éxito',
+      'Inserción realizada con éxito': 'Inserción realizada con éxito',
+      'Inserción fallida: el elemento ya existe': 'Inserción fallida: el elemento ya existe',
+      'La password para este usuario no es correcta': 'La contraseña para este usuario no es correcta',
+      'El usuario ya existe': 'El usuario ya existe',
+      'Error de gestor de base de datos': 'Error de gestor de base de datos'
 
     },
 
@@ -95,21 +134,47 @@ function cambio_idioma(idioma) {
       'Rol': 'Rol',
       'Usuario': 'Usuario',
       'Usuarios': 'Usuarios',
+      'LOGIN': 'Login',
+      'PASSWORD': 'Contrasinal',
+      'NOMBRE': 'Nome',
+      'APELLIDOS': 'Apelidos',
+      'EMAIL': 'Correo electrónico',
+      'ROL': 'Rol',
 
 
       //----------------- ESPACIO -----------------
       'Espacios': 'Espazos',
+      'Espacio': 'Espazo',
       'Código': 'Código',
       'Superficie': ' Superficie',
+      'Código espacio': 'Código espazo',
+      'CODRESERVA': 'Código espazo',
+      'NOMBREESPACIO': 'Nome',
+      'SUPERFICIEESPACIO': 'Superficie m2',
+
 
       //----------------- RESERVA -----------------
       'Reservas': 'Reservas',
+      'Fecha reserva': 'Data reserva',
+      'Hora inicio': 'Hora inicio',
+      'Hora fin': 'Hora fin',
+      'Uso reserva': 'Uso reserva',
+      'Creador': 'Creador',
+      'CODRESERVA': 'Código reserva',
+      'LOGINCREADOR': 'Login creador',
+      'FECHARESERVA': 'Data',
+      'HORARIOINICIORESERVA': 'Hora inicio',
+      'HORARIOFINRESERVA': 'Hora fin',
+      'USORESERVA': 'Uso',
+      'VERIFICADA': 'Verificada',
+
 
       //----------------- IDIOMAS -----------------
       'ENGLISH': 'Inglés',
       'SPANISH': 'Castelán',
       'GALLAECIAN': 'Galego',
       'Idioma': 'Lingua',
+
 
       //----------------- PALABRAS -----------------
       'Inicio': 'Inicio',
@@ -119,6 +184,8 @@ function cambio_idioma(idioma) {
       'Si ya tienes una cuenta, inicia sesión': 'Se xa tes unha conta, inicia sesión',
       'Texto index': 'Benvidos a ReservasIU. A web ofrece un servizo de reservas de espazos nun horario específico. Os usuarios poden realizar peticións de reservas engadindo o uso que se lle vai dar ao espazo. Estas peticións serán revisadas por un administrador, que dará unha resposta o antes posible. Os usuarios poderán revisar o calendario de ocupación de cada espazo.',
       'Acciones': 'Accións',
+      'True': 'Verdadeiro',
+      'False': 'Falso',
 
 
       //----------------- ACCIONES -----------------
@@ -141,7 +208,21 @@ function cambio_idioma(idioma) {
       'Eliminar espacio': 'Eliminar espazo',
       'Editar espacio': 'Editar espazo',
       'Buscar espacio': 'Buscar espazo',
+      'Crear reserva': 'Crear reserva',
+      'Eliminar reserva': 'Eliminar reserva',
+      'Editar reserva': 'Editar reserva',
+      'Buscar reserva': 'Buscar reserva',
+      'Gestionar reservas': 'Xestionar reservas',
 
+
+      //----------------- BBDD -----------------
+      'Actualización realizada con éxito': 'Actualización realizada con éxito',
+      'Borrado realizado con éxito': 'Borrado realizado con éxito',
+      'Inserción realizada con éxito': 'Inserción realizada con éxito',
+      'Inserción fallida: el elemento ya existe': 'Inserción errónea: o elemento xa existe',
+      'La password para este usuario no es correcta': 'O contrasinal para este usuario non é correcta',
+      'El usuario ya existe': 'O usuario xa existe',
+      'Error de gestor de base de datos': 'Error dr xestor de base de datos'
 
     },
 
@@ -156,14 +237,41 @@ function cambio_idioma(idioma) {
       'Rol': 'Role',
       'Usuario': 'User',
       'Usuarios': 'Users',
+      'LOGIN': 'Login',
+      'PASSWORD': 'Password',
+      'NOMBRE': 'Name',
+      'APELLIDOS': 'Surname',
+      'EMAIL': 'Email',
+      'ROL': 'Role',
+
 
       //----------------- ESPACIO -----------------
       'Espacios': 'Spaces',
+      'Espacio': 'Space',
       'Código': 'Code',
       'Superficie': 'Surface',
+      'Código espacio': 'Space code',
+      'CODESPACIO': 'Space code',
+      'NOMBREESPACIO': 'Name',
+      'SUPERFICIEESPACIO': 'Surface m2',
+
+
 
       //----------------- RESERVA -----------------
       'Reservas': 'Bookings',
+      'Fecha reserva': 'Booking date',
+      'Hora inicio': 'Start time',
+      'Hora fin': 'End date',
+      'Uso reserva': 'Use of booking',
+      'Creador': 'Creator',
+      'CODRESERVA': 'Booking code',
+      'LOGINCREADOR': 'Creator login',
+      'FECHARESERVA': 'Date',
+      'HORARIOINICIORESERVA': 'Start time',
+      'HORARIOFINRESERVA': 'End time',
+      'USORESERVA': 'Usage',
+      'VERIFICADA': 'Verified',
+
 
 
       //----------------- IDIOMAS -----------------
@@ -180,6 +288,8 @@ function cambio_idioma(idioma) {
       'Si ya tienes una cuenta, inicia sesión': 'If you already have an account, log in',
       'Texto index': 'Welcome to ReservasIU. The website offers a space booking service at a specific time. Users can make booking requests by adding the use that will be given to the space. These requests will be reviewed by an administrator who will give an answer as soon as possible. Users can check the occupation schedule of each space.',
       'Acciones': 'Actions',
+      'True': 'True',
+      'False': 'False',
 
       //----------------- ACCIONES -----------------
       'Add': 'Add',
@@ -201,6 +311,21 @@ function cambio_idioma(idioma) {
       'Eliminar espacio': 'Delete space',
       'Editar espacio': 'Edit space',
       'Buscar espacio': 'Search space',
+      'Crear reserva': 'Create booking',
+      'Eliminar reserva': 'Delete booking',
+      'Editar reserva': 'Edit booking',
+      'Buscar reserva': 'Search booking',
+      'Gestionar reservas': 'Manage bookings',
+
+
+      //----------------- BBDD -----------------
+      'Actualización realizada con éxito': 'Successful update',
+      'Borrado realizado con éxito': 'Successful delete',
+      'Inserción realizada con éxito': 'Successful add',
+      'Inserción fallida: el elemento ya existe': 'Insertion failed: the element already exists',
+      'La password para este usuario no es correcta': 'The password for this user is not correct',
+      'El usuario ya existe': 'User already exists',
+      'Error de gestor de base de datos': 'Database manager error'
 
     }
   };

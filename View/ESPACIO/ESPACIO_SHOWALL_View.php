@@ -22,6 +22,11 @@ class ESPACIO_SHOWALL
 
     include '../View/header.php'; //header necesita los strings
 ?>
+<div>
+  <a href='javascript:history.back(1)' class="btn-back"><img src="../View/icons/back.svg"
+      alt="back">
+  </a>
+</div>
 <h3 class="text-center font-italic" id="Showall"></h3>
 <div
   class="btn-showall-top d-flex justify-content-center align-items-center border-top border-secondary mt-1">
@@ -37,7 +42,7 @@ class ESPACIO_SHOWALL
         <?php
             foreach ($this->lista as $titulo) {
             ?>
-        <th scope="col" class=" text-center"><?php echo $titulo; ?></th>
+        <th scope="col" class=" text-center" id="<?php echo $titulo; ?>"></th>
         <?php
             }
             ?>
@@ -70,7 +75,7 @@ class ESPACIO_SHOWALL
         </td>
         <td class="pl-0 pr-0">
           <a class="btn-showall-actions"
-            href='../Controller/ESPACIO_Controller.php?action=SHOWCURRENT&CODESPACIO=<?php echo $fila['CODESPACIO']; ?>''> <img src="../View/icons/avatar.svg"></a>
+            href='../Controller/ESPACIO_Controller.php?action=SHOWCURRENT&CODESPACIO=<?php echo $fila['CODESPACIO']; ?>''> <img src="../View/icons/layer.svg"></a>
 							
         </td>
       </tr>
