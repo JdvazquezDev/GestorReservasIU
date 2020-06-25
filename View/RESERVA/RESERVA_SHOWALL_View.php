@@ -1,0 +1,105 @@
+<?php
+
+//Clase : RESERVA_SHOWALL
+//Creado el : 19/06/2020
+//Creado por: jdvazquez
+//-------------------------------------------------------
+
+
+class RESERVA_SHOWALL
+{
+
+  function __construct($lista, $datos)
+  {
+    $this->datos = $datos;
+    $this->lista = $lista;
+    $this->render();
+  }
+
+  function render()
+  {
+
+    include '../View/header.php'; //header necesita los strings
+?>
+<div>
+  <a href='javascript:history.back(1)' class="btn-back"><img src="../View/icons/back.svg"
+      alt="back">
+  </a>
+</div>
+<h3 class="text-center font-italic" id="Showall"></h3>
+<div
+  class="btn-showall-top d-flex justify-content-center align-items-center border-top border-secondary mt-1">
+  <?php
+      if ($_SESSION['ROL'] === 'usuario') {
+      ?>
+  <a href='../Controller/RESERVA_Controller.php?action=ADD'><img src="../View/icons/add.svg"></a>
+  <?php
+      }
+      ?>
+  <a href='../Controller/RESERVA_Controller.php?action=SEARCH'><img
+      src="../View/icons/search.svg"></a>
+</div>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <?php
+            foreach ($this->lista as $titulo) {
+            ?>
+        <th scope="col" class=" text-center" id="<?php echo $titulo; ?>"></th>
+        <?php
+            }
+            ?>
+        <th colspan="3" class=" text-center" id="Acciones"></th>
+
+
+      </tr>
+      <?php
+          foreach ($this->datos as $fila) {
+          ?>
+      <tr>
+        <?php
+              foreach ($this->lista as $columna) {
+              ?>
+        <td class="text-center"><?php echo $fila[$columna]; ?></td>
+        <?php
+              }
+              ?>
+
+        <td class="pl-0 pr-0">
+          <?php
+                if ($_SESSION['ROL'] === 'usuario') {
+                ?>
+          <a class="btn-showall-actions"
+            href='../Controller/RESERVA_Controller.php?action=EDIT&CODRESERVA=<?php echo $fila['CODRESERVA']; ?>'><img
+              src="../View/icons/edit.svg"> </a>
+        </td>
+        <?php
+                }
+            ?>
+        <td class="pl-0 pr-0">
+          <a class="btn-showall-actions"
+            href='../Controller/RESERVA_Controller.php?action=DELETE&CODRESERVA=<?php echo $fila['CODRESERVA']; ?>'><img
+              src="../View/icons/delete.svg"></a>
+        </td>
+        <td class="pl-0 pr-0">
+          <a class="btn-showall-actions"
+            href='../Controller/RESERVA_Controller.php?action=SHOWCURRENT&CODRESERVA=<?php echo $fila['CODRESERVA']; ?>''> <img src="../View/icons/document.svg"></a>
+							
+        </td>
+      </tr>
+      <?php
+          }
+      ?>
+    </thead>
+  </table>
+</div>
+</div>
+
+<?php
+    include '../View/footer.php';
+  } //fin metodo render
+
+}
+
+?>
