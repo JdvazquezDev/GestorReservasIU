@@ -22,6 +22,11 @@ class USUARIO_SHOWALL
 
     include '../View/header.php'; //header necesita los strings
 ?>
+<div>
+  <a href='javascript:history.back(1)' class="btn-back"><img src="../View/icons/back.svg"
+      alt="back">
+  </a>
+</div>
 <h3 class="text-center font-italic" id="Showall"></h3>
 <div
   class="btn-showall-top d-flex justify-content-center align-items-center border-top border-secondary mt-1">
@@ -37,7 +42,7 @@ class USUARIO_SHOWALL
         <?php
             foreach ($this->lista as $titulo) {
             ?>
-        <th scope="col" class=" text-center"><?php echo $titulo; ?></th>
+        <th scope="col" class=" text-center" id="<?php echo $titulo; ?>"></th>
         <?php
             }
             ?>

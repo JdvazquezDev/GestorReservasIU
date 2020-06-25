@@ -20,6 +20,11 @@ class USUARIO_EDIT
 
     include '../View/header.php'; //header necesita los strings
 ?>
+<div>
+  <a href='javascript:history.back(1)' class="btn-back"><img src="../View/icons/back.svg"
+      alt="back">
+  </a>
+</div>
 
 <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
   <div class="card text-center bg-light ">
