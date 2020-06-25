@@ -24,20 +24,23 @@ class Message
 		include_once '../View/layout.php';
 		include '../View/header.php';
 ?>
+<div>
+  <a href='javascript:history.back(1)' class="btn-back"><img src="../View/icons/back.svg"
+      alt="back">
+  </a>
+</div>
 <div class="message-container card d-flex justify-content-center">
   <p>
-    <h3>
-      <?php
-					echo $this->string;
-					?>
-    </h3>
+    <h4 class="text-center" id="<?php
+																		echo $this->string;
+																		?>">
+    </h4>
   </p>
-</div>
 
 
-<?php
+  <?php
 
-		echo '<a id="Volver"href=\'' . $this->volver . "'> </a>";
+		echo '<a class="a-back text-center m-4 font-weight-bold" id="Volver" href=\'' . $this->volver . "'> </a> </div>";
 		include '../View/footer.php';
 	} //fin metodo render
 
