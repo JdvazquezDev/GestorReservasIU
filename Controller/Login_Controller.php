@@ -21,7 +21,9 @@ if (!isset($_REQUEST['LOGIN']) && !(isset($_REQUEST['PASSWORD']))) {
 
   if ($respuesta == 'true') {
     session_start();
+    $datos = $usuario->RellenaDatos();
     $_SESSION['LOGIN'] = $_REQUEST['LOGIN'];
+    $_SESSION['ROL'] = $datos['ROL'];
     header('Location: ../Controller/Index_Controller.php');
   } else {
     include '../View/Message_View.php';
